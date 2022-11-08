@@ -1,0 +1,529 @@
+p {
+  color: darkgoldenrod;
+}
+.body {
+    background-color:#000;;
+    min-height: 100vh;
+    color: #fff;
+    display: grid;
+    place-items: center; 
+}
+
+
+#homebody {
+    background-color: black;
+    min-height: 100vh;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+#Intro {
+  background-color: black;
+  font-size: 300px;
+  color: red;
+  
+}
+
+
+/*this is for spotlight cursror, need to add javascript*/
+
+/* :root {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+} */
+
+.Intro {
+  margin: 0;
+  height: 100vh;
+  background-image: url(https://www.ajc.com/resizer/nfEnUs_B3hejeDlZc-_MnIPUpJE=/814x458/cloudfront-us-east-1.images.arcpublishing.com/ajc/JB2E4XMMG4QCZLLB3UPUEDPZRI.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0,0%,0%, 0.9);
+  mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 40px,
+    black 150px
+  );
+  -webkit-mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent 40px,
+    black 150px
+  );
+}
+
+/*javscript for cursor
+
+// Get a reference to the .mask element.
+const mask = document.querySelector('.mask');
+
+// Add an event to catch mouse movements.
+document.addEventListener('pointermove', (pos) => {
+  
+    // Calculate mouse position in percentages.
+    let x = parseInt( pos.clientX / window.innerWidth * 100 );
+    let y = parseInt( pos.clientY / window.innerHeight * 100 );
+  
+    // Update the custom property values on the body.
+    mask.style.setProperty('--mouse-x', x + '%');
+    mask.style.setProperty('--mouse-y', y + '%'); 
+  
+});
+*/
+.navigation_tab {}
+
+/*OVO team page styles below */
+
+.team_container{
+  width: 85vmin;
+  /*position: absolute;*/
+  transform: translate (-50%,-50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 10px solid black;
+  border-radius: 15% 38% 44% 72%;
+  opacity: 0.48;
+}
+.team_wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 25s infinite;
+}
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  10%{
+    transform: translateX(-25%);
+}
+20%{
+  transform: translateX(-50%);
+}
+40%{
+  transform: translateX(-100%);
+}
+50%{
+  transform: translateX(-150%);
+}
+55%{
+  transform: translateX(-200%);
+}
+65%{
+  transform: translateX(-250%);
+}
+75%{
+  transform: translateX(-305%);
+}
+80%{
+  transform: translateX(-355%);
+}
+85%{
+  transform: translateX(-400%);
+}
+95%{
+  transform: translateX(-450%);
+}
+100%{
+  transform: translateX(-500%);
+}
+}
+
+.Team{
+  width: 65%
+}
+
+.ovoTeam{
+  background-color:black;
+}
+/*Styling for Countdown timer on home page*/
+.container {
+  margin-top: 50px;
+}
+.counter .title {
+    color: #dd7700;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.counter .sq {
+    color: #dd7700;
+    display: inline-block;
+    text-align: center;
+}
+.counter .sq .bord {
+    border: 3px solid #dd7700;
+    padding: 12px 15px;
+    margin-right: 18px;
+    text-indent: 0px;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    width: 54px;
+}
+.counter .sq span {
+    clear: both;
+    display: block;
+    text-indent: -15px;
+    font-size: 25px;
+    font-size: 1.6rem;
+    font-family: "Helvetica";
+}
+.well {
+  text-align: center;
+  max-width: 400px;
+}
+
+/*Styling for Slideshow on OVO Sound Page*/
+/*Styling for Slideshow on OVO Sound Page*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: inline;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*For all done container button*/
+.pollContainer{
+  display: inline-flex;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  border: 1pxp solid #ccc;
+  overflow: hidden;
+}
+#headNav{
+  position: "absolute";
+}
+/*Below is all css styling for home.html*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.papisHome{
+  background-color:#000;;
+  min-height: 100vh;
+  height: 100vh;
+  display: grid;
+  place-items: center; /*this centered the nav bar*/
+  background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56));
+}
+.container{
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+.box{
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /*transform: rotate(-90 deg);*/
+  transform-style: preserve-3d;
+  animation: animate 15s infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  25%{
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  50%{
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  75%{
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  100%{
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+}
+.card{
+  height: 250x;
+  width: 300px;
+  text-align: center;
+  padding: 1px 0px;
+  color: blue;
+  background: black;
+  border: 2px solid black;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: fixed;
+  transition: all 3s;
+} 
+#front{
+  transform: translateZ(175px);
+}
+#back{
+  transform: translateZ(-175px);
+}
+#left{
+  right: 125px;
+  transform: rotateY(-90deg);
+}
+#right{
+  left: 150px;
+  transform: rotateY(90deg);
+}
+#top{
+  bottom: 115px;
+  transform: rotateX(90deg);
+} 
+#bottom{
+  top: 150px;
+  transform: rotateX(-90deg);
+}
+input{
+  height: 50px;
+  width: 100px;
+  background: grey;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  position: absolute;
+  top: -100px;
+  left: 175px;
+}
+input:focus~ .box #front{
+  transform: translateZ(180px) rotateY(360deg);
+}
+input:focus~ .box #back{
+  transform: translateZ(-180px) rotateY(360deg);
+}
+input:focus~ .box #left{
+  right: 180px;
+}
+input:focus~ .box #right{
+  left: 180px;
+}
+input:focus~ .box #top{
+  bottom: 180px;
+}
+input:focus~ .box #bottom{
+  top: 180px;
+}
+
+/* continued css for home page, this is for the animated text above animated box*/
+
+ .soundTab{
+  display: flex;
+  justify-content: overflow-center;
+  align-items: center;
+  min-height: 100vh;
+  background: #5d6c73;
+  writing-mode: vertical-lr;
+}
+.teamTab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #232729;
+  writing-mode: vertical-lr;
+}
+.pollTab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #3b4428;
+  writing-mode: vertical-lr;
+}
+.certiedTab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #9ca42d;
+  writing-mode: vertical-lr; 
+}
+
+.navContainer{
+  text-align: center;
+}
+.navContainer .navBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background: #fff;
+
+}
+
+/*For Index.html page*/
+.Intro{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introNav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.introContent{
+  text-align: center;
+  z-index: 2;
+}
+.introContent h1{
+font-size: 160px;
+color: #fff;
+margin-top: 300px;
+font-weight: 600;
+transition: 0.5s;
+cursor: default;
+}
+.introContent h1:hover{
+  -webkit-text-stroke: 2px rgb(129, 47, 47);
+  color: transparent;
+  font-size: 250px;
+}
+.introContent a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+.introVideo{
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  z-index: -2;
+  width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .introVideo{
+    width: auto;
+    height: 100%;
+  }
+}
+/* .light{
+  position: fixed;
+  top: 0px;
+left: 0px;
+width:100%;
+height: 100%;
+pointer-events: none;
+background: radial-gradient(circle at 50% 50%, transparent 105, rgba(0,0,0,0.95), 20%);
+} */
