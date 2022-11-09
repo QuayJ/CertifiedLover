@@ -10,34 +10,18 @@ p {
 }
 
 
-#homebody {
-    background-color: black;
-    min-height: 100vh;
-    color: #fff;
-    display: grid;
-    place-items: center;
-}
-
-#Intro {
-  background-color: black;
-  font-size: 300px;
-  color: red;
-  
-}
-
-
 /*this is for spotlight cursror, need to add javascript*/
 
 /* :root {
   --mouse-x: 50%;
   --mouse-y: 50%;
 } */
-
+/*For Index.html page---- this code will display content in center of page*/
 .Intro {
   margin: 0;
   height: 100vh;
   background-image: url(https://www.ajc.com/resizer/nfEnUs_B3hejeDlZc-_MnIPUpJE=/814x458/cloudfront-us-east-1.images.arcpublishing.com/ajc/JB2E4XMMG4QCZLLB3UPUEDPZRI.jpg);
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   position: relative;
   min-height: 100vh;
@@ -47,8 +31,20 @@ p {
   align-items: center;
   
 }
+/*For Index.html page---- this code will display content in center of page*/
+/* .Intro{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/*the above code will display content in center of page*/
 
-.mask {
+/* .mask {
   width: 100vw;
   height: 100vh;
   background-color: hsla(0,0%,0%, 0.9);
@@ -62,7 +58,7 @@ p {
     transparent 40px,
     black 150px
   );
-}
+} */
 
 /*javscript for cursor
 
@@ -82,7 +78,6 @@ document.addEventListener('pointermove', (pos) => {
   
 });
 */
-.navigation_tab {}
 
 /*OVO team page styles below */
 
@@ -147,48 +142,6 @@ document.addEventListener('pointermove', (pos) => {
 
 .ovoTeam{
   background-color:black;
-}
-/*Styling for Countdown timer on home page*/
-.container {
-  margin-top: 50px;
-}
-.counter .title {
-    color: #dd7700;
-    font-size: 16px;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 15px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-.counter .sq {
-    color: #dd7700;
-    display: inline-block;
-    text-align: center;
-}
-.counter .sq .bord {
-    border: 3px solid #dd7700;
-    padding: 12px 15px;
-    margin-right: 18px;
-    text-indent: 0px;
-    font-family: 'Helvetica';
-    font-size: 22px;
-    font-size: 2.2rem;
-    margin-bottom: 5px;
-    width: 54px;
-}
-.counter .sq span {
-    clear: both;
-    display: block;
-    text-indent: -15px;
-    font-size: 25px;
-    font-size: 1.6rem;
-    font-family: "Helvetica";
-}
-.well {
-  text-align: center;
-  max-width: 400px;
 }
 
 /*Styling for Slideshow on OVO Sound Page*/
@@ -294,10 +247,118 @@ document.addEventListener('pointermove', (pos) => {
   position: "absolute";
 }
 /*Below is all css styling for home.html*/
+/*Below is all css styling for home.html*/
+/*Below is all css styling for home.html*/
+
 *{
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+}
+
+th, tr, td, th, table {
+  border: 1px solid #fff;
+  color: #fff;
+}
+/*The code below is for typewriter on home.html*/
+h2{
+  color: black;
+  font-size: 35px;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+}
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+h2::before {
+  /* background: grey; */
+  animation: typewriter 4s steps(14) forwards;
+}
+h2::after{
+  width: 0.125em;
+  background: #000;
+  animation: 
+    typewriter 4s steps(14) forwards;
+    blink 4s steps(14) forwards;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink{
+  to{
+  background: transparent;
+  }
+}
+.subtitle{
+  color: hsl(0, 0%, 0%,);
+  font-size: 15px;
+  font-weight: 400;
+}
+/*end of typewriter for home page*/
+
+/* /*slide text*/
+/* .slide-right {
+  width: 800%;
+  overflow: scroll;
+  margin-left: 0px;
+  margin-right: 50px;
+  max-width: 1000px
+}
+
+.slide-right h2 {
+  animation: 15s slide-right;
+  animation-delay: 1s;
+  font-size: 125px;
+}
+
+@keyframes slide-right {
+   from {
+      margin-left: -500px;
+   }
+
+   to {
+      margin-left: 500%;
+   }
+} */ */
+/*slide text end*/
+
+.homeContainer{
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+}
+
+.homeNav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homeNav .logo{
+  width: 80px;
+  border-radius: 65px;
+}
+.homeNav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+.homeNav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
 }
 .papisHome{
   background-color:#000;;
@@ -306,6 +367,11 @@ document.addEventListener('pointermove', (pos) => {
   display: grid;
   place-items: center; /*this centered the nav bar*/
   background-image: linear-gradient(to top, rgb(19, 25, 27), rgb(52, 54, 56));
+  width: 100%;
+  position: relative;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: center;
 }
 .container{
   height: 60vh;
@@ -359,6 +425,7 @@ document.addEventListener('pointermove', (pos) => {
 #front{
   transform: translateZ(175px);
 }
+
 #back{
   transform: translateZ(-175px);
 }
@@ -390,7 +457,7 @@ input{
   left: 175px;
 }
 input:focus~ .box #front{
-  transform: translateZ(180px) rotateY(360deg);
+  transform: translateZ(300px) rotateY(360deg);
 }
 input:focus~ .box #back{
   transform: translateZ(-180px) rotateY(360deg);
@@ -443,6 +510,8 @@ input:focus~ .box #bottom{
   writing-mode: vertical-lr; 
 }
 
+
+
 .navContainer{
   text-align: center;
 }
@@ -455,17 +524,6 @@ input:focus~ .box #bottom{
 
 }
 
-/*For Index.html page*/
-.Intro{
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
-  position: relative;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .introNav{
   width: 100%;
   position: absolute;
