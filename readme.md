@@ -1,8 +1,8 @@
-#Certified Lover
+# H1 Certified Lover
 
 | Module 5 | Front End |
 |--------- | ------------|
-| Milestones | Certified lover |
+| Milestones |
 | Well-structured directories each containing files of the same type
 At least 1 external font linked via a cdn
 More than 1 character, meaningful selector names
