@@ -92,7 +92,7 @@ document.addEventListener('pointermove', (pos) => {
   left: 50%;
   overflow: hidden;
   border: 10px solid black;
-  border-radius: 15% 38% 44% 72%;
+  border-radius: 45% 45% 45% 45%;
   opacity: 0.48;
 }
 .team_wrapper{
@@ -144,7 +144,7 @@ document.addEventListener('pointermove', (pos) => {
 }
 
 .ovoTeam{
-  background-color:black;
+  background-color:rgb(36, 35, 35);
 }
 
 /*Styling for Slideshow on OVO Sound Page*/
@@ -253,7 +253,7 @@ document.addEventListener('pointermove', (pos) => {
 /*Below is all css styling for home.html*/
 /*Below is all css styling for home.html*/
 
-*{
+.papisHome {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
